@@ -1,0 +1,35 @@
+{
+  "name": "vscode-simple-browser-url",
+  "displayName": "Simple Browser Quick Fix",
+  "description": "Quick Fix to open link in Simple Browser",
+  "version": "1.0.0",
+  "publisher": "mathhulk",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mathhulk/vscode-simple-browser-url"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.98.0",
+    "@vscode/vsce": "^3.2.2",
+    "typescript": "^5.8.2"
+  }
+}

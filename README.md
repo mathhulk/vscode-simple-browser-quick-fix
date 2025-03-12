@@ -1,0 +1,1 @@
+# vscode-simple-browser-url
